@@ -23,10 +23,86 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-right: 1.0em;
+    padding-top: 0.2%;
 }
 .conteudo-social a {
     color: white;
     text-decoration: none;
     font-size: 25px;
     padding-left: 0.5em;
+    /* vertical-align: middle; */
 }
+.conteudo-social a:hover {
+    color: pink;
+}
+
+header {
+    z-index: 1;
+    background-color: #f9003d;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 35px;
+}
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.logo { 
+    height: 40px;
+}
+.menu-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+.menu-header a:hover:not(.botao) {
+    font-size: 1.5em;
+    color: white;
+}
+.menu-header #font {
+    font-family: "Bebas Neue", sans-serif !important;
+}
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    top: 82%;
+    right: 40px;
+}
+.whatsapp img {
+    height: 60px;
+}
+.botao {
+    background-color: #a259f7;
+    height: 45px;
+    width: 154px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 1px #080324;
+    border-radius: 30px 10px;
+}
+.botao:hover {
+    color: white;
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+}
+.menu-barras { 
+    display: none;
+}
+
+
